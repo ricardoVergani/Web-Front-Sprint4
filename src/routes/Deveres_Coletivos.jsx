@@ -1,4 +1,6 @@
 export default function Deveres_Coletivos() {
+
+
   return (
       <div className="container">
         <h1>Deveres Coletivos</h1>

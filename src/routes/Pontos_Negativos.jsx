@@ -1,9 +1,11 @@
 export default function Pontos_Negativos() {
+
+
+  
   return (
       <div className="container">
         
         <h1>Pontos Negativos</h1>
-
 
         <div className="conteudo">
         <p>

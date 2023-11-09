@@ -12,6 +12,7 @@ import Ideia from './routes/Ideia.jsx'
 import Pontos_Negativos from './routes/Pontos_Negativos.jsx'
 import Login from './routes/Login.jsx'
 import Veiculos from './routes/Veiculos.jsx'
+import Editar_Veiculo from './routes/Editar_Veiculo.jsx'
 
 
 const router = createBrowserRouter([{
@@ -30,6 +31,10 @@ const router = createBrowserRouter([{
     {
       path: '/veiculos',
       element: <Veiculos/>
+    },
+    {
+      path: '/editar/veiculos/:id',
+      element: <Editar_Veiculo/>
     },
     {
       path: '/smartcities',

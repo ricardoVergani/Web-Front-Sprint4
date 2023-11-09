@@ -1,4 +1,6 @@
 export default function Deveres_Individuais() {
+
+  
   return (
       <div className="container">
         <h1>Deveres Individuais</h1>

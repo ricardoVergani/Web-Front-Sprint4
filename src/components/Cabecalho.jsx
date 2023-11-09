@@ -1,14 +1,32 @@
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Cabecalho() {
+
+  const rotaAtual = useLocation();
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+
+    sessionStorage.removeItem("token-usuario");
+    sessionStorage.removeItem("dados-usuario");
+
+    navigate('/login');
+  }
+
   return (
       <div className="cabecalho">
         <div className="divHomeLogin">
-          <Link to="/login">Login</Link>
+          {sessionStorage.getItem("token-usuario") ? (
+          <Link onClick={handleLogout}>Logout</Link>
+          ) : (<Link to="/login">Login</Link>
+          )}
           <Link to="/">Home</Link>
           <Link to="/veiculos">Veiculos</Link>
+          
         </div>
+
         <nav>
           <ul>
             <li><Link to="/smartcities"> SmartCities</Link></li>

@@ -1,6 +1,8 @@
 export default function Problema() {
-  return (
 
+
+  
+  return (
       <div className="container">
         
         <h1>Problema</h1>

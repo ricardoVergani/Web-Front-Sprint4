@@ -1,4 +1,7 @@
 export default function Smartcities() {
+
+
+  
   return (
 
       <div className="container">
