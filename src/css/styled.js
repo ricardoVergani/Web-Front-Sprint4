@@ -3,14 +3,19 @@ import styled from "styled-components"
 
 export const DivMain = styled.div`
 
-    background-color: gold;
+    background-color: #212121;
     display: flex;
     flex-direction: column;
     padding: 30px;
     justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+    text-align: justify;
+    color: white;
 
     & h1{
         text-align: center;
+        color: white;
     }
 
     & .divImg{
@@ -30,6 +35,9 @@ export const DivMain = styled.div`
             text-align: justify;
             text-indent: 20px;
             line-height: 2;
+            color: white;
         }
     }
+
+
 `
