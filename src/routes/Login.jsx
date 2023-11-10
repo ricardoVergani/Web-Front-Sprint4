@@ -61,7 +61,7 @@ export default function Login() {
     }
 
     return (
-        <DivMain> 
+        <div> 
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
@@ -79,6 +79,6 @@ export default function Login() {
                     </div>
                 </fieldset>
             </form>
-        </DivMain>
+        </div>
     )
 }

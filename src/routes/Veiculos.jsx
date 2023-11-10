@@ -35,7 +35,7 @@ export default function Veiculos() {
     if (sessionStorage.getItem("token-usuario")){
         return(
             <div>
-                <h1>Veículos</h1>
+                <h1>Bem Vindo(a) {JSON.parse(sessionStorage.getItem("dados-usuario")).name}</h1>
                 <Modal open={open} setClose={setOpen}/>
     
     

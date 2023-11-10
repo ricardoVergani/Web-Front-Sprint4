@@ -13,6 +13,7 @@ import Pontos_Negativos from './routes/Pontos_Negativos.jsx'
 import Login from './routes/Login.jsx'
 import Veiculos from './routes/Veiculos.jsx'
 import Editar_Veiculo from './routes/Editar_Veiculo.jsx'
+import GlobalStyle from './css/GlobalStyle.js'
 
 
 const router = createBrowserRouter([{
@@ -72,5 +73,6 @@ const router = createBrowserRouter([{
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router}/>
+    <GlobalStyle/>
   </React.StrictMode>,
 )

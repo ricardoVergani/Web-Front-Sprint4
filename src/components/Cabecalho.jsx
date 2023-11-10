@@ -5,14 +5,14 @@ export default function Cabecalho() {
 
   const rotaAtual = useLocation();
 
-  const navigate = useNavigate();
-
   const handleLogout = () => {
 
     sessionStorage.removeItem("token-usuario");
     sessionStorage.removeItem("dados-usuario");
 
-    navigate('/login');
+    alert("Logout realizado!")
+
+    window.location = '/login';
   }
 
   return (

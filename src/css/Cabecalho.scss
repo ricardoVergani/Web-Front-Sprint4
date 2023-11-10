@@ -7,24 +7,25 @@
     .divHomeLoginVeiculos{
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         a{
             text-decoration: none;
             padding: 20px;
             font-size: 25px;
             font-weight: bold;
-            color: white;
+            color: goldenrod;
+            text-shadow: 2px 2px 1px black;
 
             &:hover{
-                background-color: gold;
-                color: black;
+                color: white;
                 border-radius: 10px;
             }
         }
     }
 
     nav{
+        height: 100%;
         
         ul{
             display: flex;
@@ -34,14 +35,14 @@
             li{
 
                 a{
-                    color: gold;
+                    color: rgb(189, 161, 0);
                     text-decoration: none;
-                    padding: 20px;
+                    padding: 15px;
+                    font-weight: bold;
 
                     &:hover{
-                        background-color: gold;
+                        color: white;
                         border-radius: 10px;
-                        color: black;
                     }
                 }
             }

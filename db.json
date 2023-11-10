@@ -2,8 +2,8 @@
   "veiculos": [
     {
       "id": 1,
-      "modelo": "Puntoooo",
-      "ano": "2017",
+      "modelo": "fusca",
+      "ano": "1978",
       "cor": "amarelo"
     }
   ],
