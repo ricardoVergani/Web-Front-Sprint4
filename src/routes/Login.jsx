@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
+import { DivMain } from "../css/styled";
 
 
 
@@ -60,7 +61,7 @@ export default function Login() {
     }
 
     return (
-        <div> 
+        <DivMain> 
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
@@ -78,6 +79,6 @@ export default function Login() {
                     </div>
                 </fieldset>
             </form>
-        </div>
+        </DivMain>
     )
 }

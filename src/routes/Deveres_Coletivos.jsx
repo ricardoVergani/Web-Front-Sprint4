@@ -1,10 +1,17 @@
+import { DivMain } from "../css/styled";
+import Coletivos from "../../public/img/responsa_coletiva.jpeg"
+
 export default function Deveres_Coletivos() {
 
 
   return (
-      <div className="container">
+      <DivMain>
         <h1>Deveres Coletivos</h1>
 
+
+        <div className="divImg">
+          <img src={Coletivos} alt="deveres coletivos" />
+        </div>
 
         <div className="conteudo">
           <p>
@@ -19,6 +26,6 @@ export default function Deveres_Coletivos() {
               <li>Educar a população sobre os riscos da poluição do ar e como reduzi-la </li>
           </ul>
         </div>
-      </div>
+      </DivMain>
   )
 }

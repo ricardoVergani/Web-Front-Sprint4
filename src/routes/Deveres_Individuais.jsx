@@ -1,10 +1,16 @@
+import { DivMain } from "../css/styled";
+import Individuais from "../../public/img/responsa.jpeg"
+
 export default function Deveres_Individuais() {
 
   
   return (
-      <div className="container">
+      <DivMain>
         <h1>Deveres Individuais</h1>
 
+        <div className="divImg">
+          <img src={Individuais} alt="individuais" />
+        </div>
         
         <div className="conteudo">
           <p>A responsabilidade individual envolve ações que cada pessoa pode tomar para reduzir a poluição do ar em sua própria vida cotidiana. Algumas ações individuais que podem ser  tomadas incluem:</p>
@@ -16,6 +22,6 @@ export default function Deveres_Individuais() {
               <li>Fazer a manutenção regular do carro, verificando se os pneus estão com a pressão adequada e trocando o óleo regularmente.</li>
           </ul>
         </div>
-      </div>
+      </DivMain>
   )
 }

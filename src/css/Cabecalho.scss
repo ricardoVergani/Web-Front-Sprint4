@@ -1,0 +1,56 @@
+
+
+.cabecalho{
+    background-color: #2F1852;
+    padding: 20px;
+
+    .divHomeLoginVeiculos{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+
+        a{
+            text-decoration: none;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+
+            &:hover{
+                background-color: gold;
+                color: black;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    nav{
+        
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+            li{
+
+                a{
+                    color: gold;
+                    text-decoration: none;
+                    padding: 20px;
+
+                    &:hover{
+                        background-color: gold;
+                        border-radius: 10px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .active{
+        background-color: gold;
+        color: black;
+        border-radius: 10px;
+    }
+}

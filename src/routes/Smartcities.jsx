@@ -1,12 +1,19 @@
+import { DivMain } from "../css/styled";
+import SmartCities from "../../public/img/smartcities.jpeg";
+
 export default function Smartcities() {
 
 
   
   return (
 
-      <div className="container">
+      <DivMain>
         
         <h1>SmartCities</h1>
+
+        <div className="divImg">
+          <img src={SmartCities} alt="smartcities" />
+        </div>
 
 
         <div className="conteudo">
@@ -17,6 +24,6 @@ export default function Smartcities() {
           <p>Além disso, as cidades inteligentes promovem a interação ativa dos cidadãos por meio de aplicativos e plataformas interativas, fortalecendo a transparência, engajamento e responsabilidade.
           </p>
         </div>
-      </div>
+      </DivMain>
   )
 }
