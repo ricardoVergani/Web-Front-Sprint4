@@ -1,11 +1,10 @@
-import { DivMain } from "../css/styled";
 import Individuais from "../../public/img/responsa.jpeg"
 
 export default function Deveres_Individuais() {
 
   
   return (
-      <DivMain>
+      <div>
         <h1>Deveres Individuais</h1>
 
         <div className="divImg">
@@ -22,6 +21,6 @@ export default function Deveres_Individuais() {
               <li>Fazer a manutenção regular do carro, verificando se os pneus estão com a pressão adequada e trocando o óleo regularmente.</li>
           </ul>
         </div>
-      </DivMain>
+      </div>
   )
 }

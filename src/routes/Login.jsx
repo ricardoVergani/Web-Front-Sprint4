@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
-import { DivMain } from "../css/styled";
+import "../css/Login.scss"
 
 
 
@@ -61,24 +61,47 @@ export default function Login() {
     }
 
     return (
-        <div> 
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
-                <fieldset>
-                    <legend>Informações do usuário</legend>
-                    <div>
-                        <label htmlFor="idEmail">Email:</label>
-                        <input type="email" id="idEmail" name="email" placeholder="Digite seu email" value={usuario.email} onChange={handleChange}/>
-                    </div>
-                    <div>
-                        <label htmlFor="idSenha">Senha:</label>
-                        <input type="password" id="idSenha" name="senha" placeholder="Digite sua senha" value={usuario.senha} onChange={handleChange}/>
-                    </div>
-                    <div>
-                        <button>Login</button>
-                    </div>
-                </fieldset>
+        <div className="divLogin">
+        <div className="containerLoginPage">
+            <input type="checkbox" id="register_toggle"/>
+            <div className="slider">
+            <form className="form" onSubmit={handleSubmit}>
+                <span className="title">Login</span>
+                <div className="form_control">
+                    <input type="email" className="input" required=""/>
+                    <label className="label">Email</label>
+                </div>
+                <div className="form_control">
+                    <input type="password" className="input" required=""/>
+                    <label className="label">Password</label>
+                </div>
+                <button type="submit">Login</button>
+
+                <span className="bottom_text">Dont have an account? <label htmlFor="register_toggle" className="swtich">Sign Up</label> </span>
             </form>
+            <form className="form">
+                <span className="title">Sign Up</span>
+                <div className="form_control">
+                    <input type="text" className="input" required=""/>
+                    <label className="label">Username</label>
+                </div>
+                <div className="form_control">
+                    <input type="email" className="input" required=""/>
+                    <label className="label">Email</label>
+                </div>
+                <div className="form_control">
+                    <input type="password" className="input" required=""/>
+                    <label className="label">Password</label>
+                </div>
+                <button>Sign Up</button>
+
+                <span className="bottom_text">Already have an account? <label htmlFor="register_toggle" className="swtich">Sign In</label> </span>
+            </form>
+            </div>
         </div>
+
+        </div>
+
+        
     )
 }

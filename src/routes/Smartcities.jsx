@@ -1,4 +1,3 @@
-import { DivMain } from "../css/styled";
 import SmartCities from "../../public/img/smartcities.jpeg";
 
 export default function Smartcities() {
@@ -7,7 +6,7 @@ export default function Smartcities() {
   
   return (
 
-      <DivMain>
+      <div>
         
         <h1>SmartCities</h1>
 
@@ -24,6 +23,6 @@ export default function Smartcities() {
           <p>Além disso, as cidades inteligentes promovem a interação ativa dos cidadãos por meio de aplicativos e plataformas interativas, fortalecendo a transparência, engajamento e responsabilidade.
           </p>
         </div>
-      </DivMain>
+      </div>
   )
 }
