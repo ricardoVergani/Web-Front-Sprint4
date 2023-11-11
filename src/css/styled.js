@@ -46,7 +46,23 @@ export const DivMain = styled.div`
 
 
 export const DivMainHome = styled.div`  /*Conteúdo da Home */
-    height: 78%;
+    min-height: 78%;
     background-color: #212121;
     padding: 5% 28%;
+
+    @media (max-width:1200px) {
+        
+        
+    }
+
+
+    & .divImg{
+        display: flex;
+        justify-items: center;
+
+        & img{
+            max-height: 100%;
+            width: 100%;
+        }
+    }
 `

@@ -11,17 +11,21 @@
         justify-content: space-evenly;
         margin-bottom: 20px;
 
+        @media (max-width:1200px) {
+            flex-direction: column;
+        }
+
         a{
             font-family: 'Bebas Neue', sans-serif;
             text-decoration: none;
             padding: 20px;
             font-size: 60px;
             font-weight: bold;
-            color: white;
+            color: gold;
 
 
             &:hover{
-                color: black;
+                color: bisque;
                 border-radius: 10px;
 
             }
@@ -36,6 +40,17 @@
             justify-content: space-evenly;
             list-style: none;
 
+            @media (max-width: 1200px) {
+                flex-direction:column;
+
+                li{
+
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+
             li{
 
                 a{
@@ -45,7 +60,7 @@
                     font-weight: bold;
 
                     &:hover{
-                        color: black;
+                        color: bisque;
                         border-radius: 10px;
                     }
                 }
@@ -55,7 +70,7 @@
 
     .active{
         text-shadow: 3px 3px 3px gray;
-        color: black;
+        color: gold;
         border-radius: 10px;
     }
 }

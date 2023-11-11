@@ -9,7 +9,7 @@ export default function Deveres_Individuais() {
         <h1>Deveres Individuais</h1>
 
         <div className="divImg">
-          <img src={Individuais} alt="individuais" />
+          <img src={Individuais} alt="deveres individuais" />
         </div>
         
         <div className="conteudo">

@@ -1,16 +1,22 @@
 {
   "veiculos": [
     {
-      "modelo": "Poggers",
-      "ano": "2204",
-      "cor": "Vermelho",
+      "modelo": "Duster",
+      "ano": "2023",
+      "cor": "Marrom",
       "id": 3
     },
     {
-      "modelo": "",
-      "ano": "",
-      "cor": "",
+      "modelo": "fusca",
+      "ano": "1978",
+      "cor": "azul",
       "id": 4
+    },
+    {
+      "modelo": "A3",
+      "ano": "2017",
+      "cor": "branco",
+      "id": 5
     }
   ],
   "usuarios": [
