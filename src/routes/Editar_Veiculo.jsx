@@ -57,13 +57,13 @@ export default function Editar_Veiculo() {
         <h1>Editando o produto: {veiculo.modelo}</h1>
 
         <div>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="">Modelo: </label>
-                <input type="text" name="modelo" placeholder="Digite o modelo do veículo" value={veiculo.modelo} onChange={handleChange}/>
-                <label htmlFor="">Ano: </label>
-                <input type="year" name="ano" placeholder="Digite o ano do veículo" value={veiculo.ano} onChange={handleChange}/>
-                <label htmlFor="">Cor: </label>
-                <input type="text" name="cor" placeholder="Digite a cor do veículo" value={veiculo.cor} onChange={handleChange}/>
+            <form className="editor" onSubmit={handleSubmit}>
+                <label className="labelEdit" htmlFor="">Modelo: </label>
+                <input className="inputEdit" type="text" name="modelo" placeholder="Digite o modelo do veículo" value={veiculo.modelo} onChange={handleChange}/>
+                <label className="labelEdit" htmlFor="">Ano: </label>
+                <input className="inputEdit" type="year" name="ano" placeholder="Digite o ano do veículo" value={veiculo.ano} onChange={handleChange}/>
+                <label className="labelEdit" htmlFor="">Cor: </label>
+                <input className="inputEdit" type="text" name="cor" placeholder="Digite a cor do veículo" value={veiculo.cor} onChange={handleChange}/>
                 <button className="botaoEditar">Editar</button>
             </form>
         </div>

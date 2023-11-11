@@ -1,27 +1,30 @@
-// div{
-//     div{
-//         form{
-//             justify-content: center;
-//             display: flex;
-//             align-items: center;
-//             flex-direction: column;
+div{
+    div{
+        .editor{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
 
-//             label{
-//                 margin-top: 5px;
-//                 font-size: 40px;
-//             }
-//             input{
-//                 width: 300px;
-//                 height: 35px;
-//                 border-radius: 3px;
-//                 text-align: center;
+            .labelEdit{
+                margin: 10px;
+            
+                
+            }
+            .inputEdit{
+                text-align: center;
+                padding: 2px;
 
-//             }
-//             button{
-//                 padding: 10px;
-//                 margin-top: 15px;
-//                 width: 100px;
-//             }
-//         }
-//     }
-// }
+            }
+            button{
+                margin-top: 14px;
+                width: 100px;
+                padding: 7px;
+                
+                
+                
+            }
+        }
+    }
+}
