@@ -1,8 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .cabecalho{
-    background-color: #2F1852;
+    background-color: #212121;
     padding: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
 
     .divHomeLoginVeiculos{
         display: flex;
@@ -10,16 +12,18 @@
         margin-bottom: 20px;
 
         a{
+            font-family: 'Bebas Neue', sans-serif;
             text-decoration: none;
             padding: 20px;
-            font-size: 25px;
+            font-size: 60px;
             font-weight: bold;
-            color: goldenrod;
-            text-shadow: 2px 2px 1px black;
+            color: white;
+
 
             &:hover{
-                color: white;
+                color: black;
                 border-radius: 10px;
+
             }
         }
     }
@@ -35,13 +39,13 @@
             li{
 
                 a{
-                    color: rgb(189, 161, 0);
+                    color: white;
                     text-decoration: none;
                     padding: 15px;
                     font-weight: bold;
 
                     &:hover{
-                        color: white;
+                        color: black;
                         border-radius: 10px;
                     }
                 }
@@ -50,7 +54,7 @@
     }
 
     .active{
-        background-color: gold;
+        text-shadow: 3px 3px 3px gray;
         color: black;
         border-radius: 10px;
     }

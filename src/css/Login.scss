@@ -1,0 +1,35 @@
+div{
+    form{
+        fieldset{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            legend{
+                text-align: center;
+            }
+
+
+            input{
+                width: 300px;
+                height: 25px;
+                border-radius: 3px;
+                text-align: center;
+            }
+                
+            
+
+            label{
+                margin-top: 5px;
+                              
+            }
+
+
+            button{
+                padding: 10px;
+                margin-top: 10px;
+                width: 100px;
+            }
+        }
+    }
+}

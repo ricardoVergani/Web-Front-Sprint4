@@ -3,6 +3,8 @@ import Modal from "../components/Modal";
 import { Link, useNavigate } from "react-router-dom";
 import { BsTrashFill as Deletar } from 'react-icons/bs';
 import { AiFillEdit as Editar } from 'react-icons/ai';
+import "../css/Veiculos.scss"
+import { DivMain } from "../css/styled";
 
 
 
@@ -34,12 +36,12 @@ export default function Veiculos() {
 
     if (sessionStorage.getItem("token-usuario")){
         return(
-            <div>
+            <DivMain>
                 <h1>Bem Vindo(a) {JSON.parse(sessionStorage.getItem("dados-usuario")).name}</h1>
                 <Modal open={open} setClose={setOpen}/>
     
     
-                <button onClick={()=>setOpen(true)}>Inserir novo</button>
+                <button className="botaoModal" onClick={()=>setOpen(true)}>Inserir novo</button>
                 <table>
                     <thead>
                         <tr className="thTitulo">
@@ -70,7 +72,7 @@ export default function Veiculos() {
                         </tr>
                     </tfoot>
                 </table>
-            </div>
+            </DivMain>
         )
     } 
     

@@ -1,10 +1,13 @@
-import CarouselImages from "../components/CarouselImages";
+import { DivMainHome } from "../css/styled";
+
+
+
 
 export default function Home() {
   
   return (
-    <div>
-      <CarouselImages/>
-    </div>
+    <DivMainHome>
+      Home
+    </DivMainHome>
   )
 }

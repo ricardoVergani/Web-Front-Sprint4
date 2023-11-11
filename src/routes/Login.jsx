@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import { DivMain } from "../css/styled";
+import "../css/Login.scss";
 
 
 
@@ -61,24 +62,18 @@ export default function Login() {
     }
 
     return (
-        <div> 
+        <DivMain> 
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <legend>Informações do usuário</legend>
-                    <div>
-                        <label htmlFor="idEmail">Email:</label>
-                        <input type="email" id="idEmail" name="email" placeholder="Digite seu email" value={usuario.email} onChange={handleChange}/>
-                    </div>
-                    <div>
-                        <label htmlFor="idSenha">Senha:</label>
-                        <input type="password" id="idSenha" name="senha" placeholder="Digite sua senha" value={usuario.senha} onChange={handleChange}/>
-                    </div>
-                    <div>
-                        <button>Login</button>
-                    </div>
+                    <legend>Informações do usuário </legend>
+                    <label htmlFor="idEmail">Email:</label>
+                    <input type="email" id="idEmail" name="email" placeholder="Digite seu email" value={usuario.email} onChange={handleChange}/>
+                    <label htmlFor="idSenha">Senha:</label>
+                    <input type="password" id="idSenha" name="senha" placeholder="Digite sua senha" value={usuario.senha} onChange={handleChange}/>
+                    <button>Login</button>
                 </fieldset>
             </form>
-        </div>
+        </DivMain>
     )
 }

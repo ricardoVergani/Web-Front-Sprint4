@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
+import { DivMain } from "../css/styled";
+import "../css/Editar_Veiculos.scss";
 
 
 export default function Editar_Veiculo() {
@@ -51,7 +53,7 @@ export default function Editar_Veiculo() {
     }
 
   return (
-    <div>
+    <DivMain>
         <h1>Editando o produto: {veiculo.modelo}</h1>
 
         <div>
@@ -65,6 +67,6 @@ export default function Editar_Veiculo() {
                 <button className="botaoEditar">Editar</button>
             </form>
         </div>
-    </div>
+    </DivMain>
   )
 }

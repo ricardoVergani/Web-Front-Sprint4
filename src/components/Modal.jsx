@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "../css/Modal.scss"  
 
 export default function Modal(props) {
 

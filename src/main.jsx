@@ -16,6 +16,7 @@ import Editar_Veiculo from './routes/Editar_Veiculo.jsx'
 import GlobalStyle from './css/GlobalStyle.js'
 
 
+
 const router = createBrowserRouter([{
   path: '/',
   element: <App/>,
@@ -71,8 +72,8 @@ const router = createBrowserRouter([{
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
     <RouterProvider router={router}/>
     <GlobalStyle/>
-  </React.StrictMode>,
+  </>,
 )

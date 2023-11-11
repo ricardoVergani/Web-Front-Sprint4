@@ -1,0 +1,65 @@
+div{
+    .botaoModal{
+        background-color: yellow;
+        height: 50px;
+        border-radius: 8px;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    
+    
+    
+    table {
+        border-collapse: collapse;
+    
+        thead{
+    
+            .thTitulo{
+                background-color: purple;
+    
+                th{
+                    border: 2px solid darkmagenta;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+    
+            tr{
+                background-color: var(--roxo1);
+    
+                th{
+                    border: 1px solid darkmagenta;
+                    color: white;
+                    padding: 10px 60px;
+                    text-align: center;
+                }
+            }
+        }
+    
+        tbody{
+            tr{
+                background-color: var(--roxo4);
+    
+                td{
+                    border: 1px solid darkmagenta;
+                    color: white;
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+        }
+        tfoot{
+            tr{
+                background-color: gray;
+    
+                td{
+                    border: 1px solid darkmagenta;
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+
