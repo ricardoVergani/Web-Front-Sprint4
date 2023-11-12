@@ -63,11 +63,6 @@ export const DivMainHome = styled.div`  /*Conteúdo da Home */
     background-color: #212121;
     padding: 5% 28%;
 
-    @media (max-width:1200px) {
-        
-        
-    }
-
 
     & .divImg{
         display: flex;
@@ -77,6 +72,14 @@ export const DivMainHome = styled.div`  /*Conteúdo da Home */
             max-height: 100%;
             width: 100%;
         }
+    }
+
+    p{
+        color: white;
+        margin-top: 3%;
+        font-size: 21px;
+        font-family:'Lucida Sans';
+        text-align: center;
     }
 `
 

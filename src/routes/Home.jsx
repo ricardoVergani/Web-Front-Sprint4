@@ -11,6 +11,7 @@ export default function Home() {
       <div className="divImg">
           <img src={Logo} alt="Logo EcoUrban" />
       </div>
+        <p>Diminuindo a poluição, um carro de cada vez</p>
     </DivMainHome>
   )
 }
