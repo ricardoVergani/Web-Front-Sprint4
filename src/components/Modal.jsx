@@ -1,7 +1,10 @@
 import { useState } from "react"
 import "../css/Modal.scss"  
+import { useNavigate } from "react-router-dom"
 
 export default function Modal(props) {
+
+  const navigate = useNavigate();
 
     const [veiculo,setVeiculo] = useState({
         modelo: "",
@@ -25,7 +28,7 @@ export default function Modal(props) {
         },
         body: JSON.stringify(veiculo)
       }).then(response => response.json()).then(response => console.log(response)).catch(error => console.log(error));
-  
+
     }
   
   

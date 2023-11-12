@@ -1,5 +1,5 @@
 import "../css/Cabecalho.scss";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Cabecalho() {
 

@@ -62,14 +62,13 @@ export default function Login() {
     }
 
     return (
-        <DivMain> 
-            <h1>Login</h1>
+        <DivMain className="divLogin"> 
             <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <legend>Informações do usuário </legend>
-                    <label htmlFor="idEmail">Email:</label>
+                    <legend><h3>Informações do usuário</h3> </legend>
+                    <label htmlFor="idEmail">Email</label>
                     <input type="email" id="idEmail" name="email" placeholder="Digite seu email" value={usuario.email} onChange={handleChange}/>
-                    <label htmlFor="idSenha">Senha:</label>
+                    <label htmlFor="idSenha">Senha</label>
                     <input type="password" id="idSenha" name="senha" placeholder="Digite sua senha" value={usuario.senha} onChange={handleChange}/>
                     <button>Login</button>
                 </fieldset>

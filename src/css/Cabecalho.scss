@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .cabecalho{
-    background-color: #212121;
+    background-image: linear-gradient(to bottom, rgb(190, 162, 5), #212121);
     padding: 20px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
@@ -21,7 +21,7 @@
             padding: 20px;
             font-size: 60px;
             font-weight: bold;
-            color: gold;
+            color: black;
 
 
             &:hover{
@@ -44,6 +44,7 @@
                 flex-direction:column;
 
                 li{
+                    margin-top: 30px;
 
                     a{
                         text-align: center;
@@ -54,10 +55,11 @@
             li{
 
                 a{
-                    color: white;
+                    color: gold;
                     text-decoration: none;
                     padding: 15px;
                     font-weight: bold;
+                    text-shadow: 2px 3px 5px black;
 
                     &:hover{
                         color: bisque;
@@ -69,8 +71,7 @@
     }
 
     .active{
-        text-shadow: 3px 3px 3px gray;
-        color: gold;
         border-radius: 10px;
+        border: 2px solid gold;
     }
 }

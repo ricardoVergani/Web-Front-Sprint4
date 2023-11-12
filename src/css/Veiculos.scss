@@ -1,37 +1,45 @@
 div{
     .botaoModal{
-        background-color: yellow;
+        background-color: green;
         height: 50px;
         border-radius: 8px;
         font-family: 'Bebas Neue', sans-serif;
+        font-size: 80%;
+        margin: 3% 40%;
 
-        margin: 40px 40%;
+       
+
+        &:hover{
+            background-color: greenyellow;
+        }
     }
     
     
     
     table {
         border-collapse: collapse;
+        border: 2px solid #434343;
     
         thead{
     
             .thTitulo{
-                background-color: purple;
+                background-color: gold;
     
                 th{
-                    border: 2px solid darkmagenta;
-                    padding: 10px;
+                    border: 2px solid #434343;
+                    padding: 1%;
                     text-align: center;
+                    color: black;
                 }
             }
     
             tr{
-                background-color: var(--roxo1);
+                background-color: gold;
     
                 th{
-                    border: 1px solid darkmagenta;
-                    color: white;
-                    padding: 10px 60px;
+                    border: 2px solid 434343;
+                    color: black;
+                    padding: 1%;
                     text-align: center;
                 }
             }
@@ -42,21 +50,22 @@ div{
                 background-color: var(--roxo4);
     
                 td{
-                    border: 1px solid darkmagenta;
+                    border: 1px solid 434343;
                     color: white;
                     text-align: center;
-                    padding: 10px;
+                    padding: 1%;
                 }
             }
         }
+
         tfoot{
             tr{
                 background-color: gray;
     
                 td{
-                    border: 1px solid darkmagenta;
+                    border: 1px solid 434343;
                     text-align: center;
-                    padding: 10px;
+                    padding: 1%;
                 }
             }
         }

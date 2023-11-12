@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 
+
 export const DivMain = styled.div`
 
-    height: 100vh;
+    height: 70%;
     background-color: #212121;
     display: flex;
     flex-direction: column;
@@ -18,6 +19,7 @@ export const DivMain = styled.div`
     & h1{
         text-align: center;
         color: white;
+        margin-top: 20px;
     }
 
     & .divImg{
@@ -36,8 +38,19 @@ export const DivMain = styled.div`
         & p{
             text-align: justify;
             text-indent: 20px;
-            line-height: 2;
+            line-height: 2em;
             color: white;
+            margin: 3% 14%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        & ul{
+
+            & li{
+                margin: 1% 24%;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 2em;
+            }
         }
     }
 
@@ -65,4 +78,10 @@ export const DivMainHome = styled.div`  /*Conteúdo da Home */
             width: 100%;
         }
     }
+`
+
+export const DivApp = styled.div`
+
+    min-height: 100vh;
+    
 `
